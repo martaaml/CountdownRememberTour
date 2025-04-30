@@ -1,5 +1,5 @@
 // Fecha objetivo
-const fechaObjetivo = new Date("May 29, 2025 21:00:00").getTime();
+const fechaObjetivo = new Date("Apr 30, 2025 14:30:00").getTime();
 
 // Lógica de la cuenta atrás
 const intervalo = setInterval(() => {
