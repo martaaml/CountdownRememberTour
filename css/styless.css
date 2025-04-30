@@ -8,3 +8,123 @@ a {
     border-radius: 10px;
 }
 
+/* Reset básico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.box__img {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.box__img img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.box__text {
+    flex: 2;
+    padding-right: 20px;
+}
+
+  
+  /* Contenedor principal: flexbox para dividir izquierda / derecha */
+  .ciudad-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 2rem;
+    flex-wrap: wrap; /* Responsive */
+  }
+  
+  /* Columna izquierda: texto y cuenta atrás */
+  .info-ciudad {
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+  
+  /* Columna derecha: cartel */
+  .imagen-ciudad {
+    flex: 1 1 40%;
+    text-align: center;
+  }
+  
+  .img-ciudad {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Cuenta atrás estilo */
+  .cuenta-atras {
+    display: flex;
+    gap: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .cuenta-atras__item {
+    background: #ffeded;
+    padding: 1rem;
+    border-radius: 8px;
+    min-width: 60px;
+    text-align: center;
+  }
+  
+  /* Botón */
+  #btn-ciudad {
+    margin-top: 1rem;
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    background-color: #ff0000;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  #btn-ciudad:hover {
+    background-color: #cc0000;
+  }
+  
+  /* Responsive para móviles */
+  @media (max-width: 768px) {
+    .ciudad-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .info-ciudad, .imagen-ciudad {
+      flex: 1 1 100%;
+      text-align: center;
+    }
+  
+    .cuenta-atras {
+      justify-content: center;
+    }
+  }
+  

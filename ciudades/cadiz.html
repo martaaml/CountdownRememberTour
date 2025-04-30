@@ -1,31 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CADIZ</title>
+    <link rel="stylesheet" href="../css/styless.css">
+    <script defer src="../js/cuentaAtrasCadiz.js"></script>
 </head>
 
 <body>
     <h1>GEMELIERS REMEMBER TOUR CADIZ</h1>
     <img src="../img/cartelCadiz.jpg" alt="Cadiz" class="img-ciudad">
     <h2>29 MAYO 2025 </h2>
-    <p>Cadiz acoge a gemeliers en la SALA MOMART</p>
+
+    <div id="cuentaAtras"></div>
+
+    <p>Cadiz acoge al dúo GEMELIERS en la SALA MOMART</p>
     <p>El evento empieza a las 21:00h, y la apertura de puertas es a las 20:00h</p>
+
     <h3>TIEMPO RESTANTE:</h3>
+    <div id="cuenta-atras" class="cuenta-atras">
+        <div id="dias" class="cuenta-atras__item"></div>
+        <div id="horas" class="cuenta-atras__item"></div>
+        <div id="minutos" class="cuenta-atras__item"></div>
+        <div id="segundos" class="cuenta-atras__item"></div>
+    </div>
 
-
-
-    <h4>UBICACION</h4>
+    <h4>UBICACIÓN</h4>
     <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3205.621092315951!2d-6.290585200000001!3d36.5391347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0dd17092fbb8d1%3A0xaf6cd3492339f727!2sMomart%20Theatre!5e0!3m2!1ses!2ses!4v1745831218345!5m2!1ses!2ses"
         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-    <button id="btn-ciudad">VER OTRA CIUDAD</button>
+    <h5>PUEDES CONSEGUIR LAS ENTRADAS AQUÍ</h5>
+    <a href="https://www.enterticket.es/eventos/gemeliers-en-cadiz-211408">
+        <!-- Emoticono SVG botón entradas -->
+        <svg fill="#ff0000" viewBox="0 0 512 512" height="70px" width="70px" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M460.109,249.799c6.9-2.148,11.891-8.111,11.891-15.338V200c0-17.673-14.327-32-32-32h-24v-32c0-22.055-17.945-40-40-40H72 c-22.055,0-40,17.945-40,40v34.461c0,10.477,7.039,19.711,17.512,22.977C62.961,197.625,72,209.906,72,224 s-9.039,26.375-22.488,30.563C39.039,257.828,32,267.063,32,277.539V312c0,22.055,17.945,40,40,40h32v24c0,17.673,14.327,32,32,32 h248v-56c0-4.422,3.578-8,8-8s8,3.578,8,8v56h40c17.673,0,32-14.327,32-32v-34.462c0-7.227-4.99-13.19-11.891-15.337 C443.83,321.134,432,305.94,432,288S443.83,254.866,460.109,249.799z M192,314c0,4.422-3.582,8-8,8s-8-3.578-8-8v-52 c0-4.422,3.582-8,8-8s8,3.578,8,8V314z M333.761,297.63l-32.5,32.855c-7.318,7.398-19.204,7.398-26.522,0l-32.5-32.855 c-11.85-11.979-13.889-31.229-3.614-44.605c12.414-16.161,35.529-17.243,49.375-3.245c13.847-13.998,36.961-12.917,49.375,3.245 C347.65,266.4,345.611,285.65,333.761,297.63z M400,314c0,4.422-3.578,8-8,8s-8-3.578-8-8v-52c0-4.422,3.578-8,8-8s8,3.578,8,8V314 z M400,224c0,4.422-3.578,8-8,8s-8-3.578-8-8v-56H136c-17.673,0-32,14.327-32,32v34.461c0,7.227,4.99,13.19,11.891,15.338 C132.17,254.866,144,270.06,144,288s-11.83,33.134-28.109,38.201c-5.102,1.588-9.144,5.269-10.913,9.997 C104.643,336.154,104.347,336,104,336H72c-13.234,0-24-10.766-24-24v-34.461c0-3.492,2.461-6.508,6.27-7.695 C74.445,263.555,88,245.133,88,224s-13.555-39.555-33.73-45.844c-3.809-1.188-6.27-4.203-6.27-7.695V136c0-13.234,10.766-24,24-24 h304c13.234,0,24,10.766,24,24v32V224z" />
+        </svg>
+    </a>
 
+    <button id="btn-ciudad">OTRA CIUDAD</button>
+
+    <!-- Confetti -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="../js/script.js"></script>
 </body>
-<script src="../js/script.js"></script>
 
 </html>
